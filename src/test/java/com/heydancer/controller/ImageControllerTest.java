@@ -123,7 +123,7 @@ class ImageControllerTest {
     }
 
     @Test
-    public void shouldRemoveImage() throws Exception {
+    void shouldRemoveImage() throws Exception {
         mvc.perform(delete("/users/5/images/6")
                         .with(csrf()))
                 .andExpect(status().isNoContent());
